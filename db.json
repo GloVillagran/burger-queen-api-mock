@@ -102,6 +102,18 @@
       "password": "$2a$10$JABwR1UAtJqr2DCJ41ypMOgOqlh8eRXmTBO6DXfKG3ybxhABY4rey",
       "role": "admin",
       "id": 2
+    },
+    {
+      "email": "gloria@gmail.com",
+      "password": "1234567",
+      "role": "waiter",
+      "id": 3
+    },
+    {
+      "email": "hugo@gmail.com",
+      "password": "123456",
+      "role": "waiter",
+      "id": 4
     }
   ]
 }

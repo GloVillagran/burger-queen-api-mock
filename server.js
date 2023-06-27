@@ -28,3 +28,6 @@ app.use(router);
 app.listen(port, () => {
     console.log(`JSON Server is running in ${port}`);
 });
+
+// Export the Server API
+module.exports = app

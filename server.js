@@ -24,7 +24,7 @@ app.use(rules);
 app.use(auth);
 app.use(router);
 app.use(cors({
-    origin: '*'
+    origin: 'localhost'
 }));
 app.listen(port, () => {
     console.log(`JSON Server is running in ${port}`);

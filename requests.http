@@ -8,7 +8,7 @@ content-type: application/json
 
 GET http://localhost:8080/users HTTP/1.1
 content-type: application/json
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY4NTExNTQyOSwiZXhwIjoxNjg1MTE5MDI5LCJzdWIiOiIyIn0.PAIDroLaYvgyLq2xYfllwgckDWbPyGUN4Kp8zYpmbmg
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY4NTQ5Mzk1MywiZXhwIjoxNjg1NDk3NTUzLCJzdWIiOiIyIn0.SPSnBNi7hoNd_B8n-4VnFZyHbdpTSq80bnrAG9ZYwDI
 
 GET http://localhost:8080/products HTTP/1.1
 content-type: application/json

@@ -17,14 +17,15 @@ const cors = require('cors');
 // /!\ Bind the router db to the app
 app.db = router.db
 
-app.use(cors({
-    origin: '*'
-}));
+
 // You must apply the auth middleware before the router
 app.use(middlewares);
 app.use(rules);
 app.use(auth);
 app.use(router);
+app.use(cors({
+    origin: '*'
+}));
 app.listen(port, () => {
     console.log(`JSON Server is running in ${port}`);
 });

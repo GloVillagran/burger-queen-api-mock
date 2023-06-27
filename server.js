@@ -11,9 +11,15 @@ const port = process.env.PORT || 8080;
 
 const rules = auth.rewriter(JSON.parse(fs.readFileSync(path.join(__dirname, 'routes.json'))));
 
+const cors = require('cors');
+
+
 // /!\ Bind the router db to the app
 app.db = router.db
 
+app.use(cors({
+    origin: '*'
+}));
 // You must apply the auth middleware before the router
 app.use(middlewares);
 app.use(rules);

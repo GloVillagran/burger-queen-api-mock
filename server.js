@@ -23,14 +23,7 @@ app.use(middlewares);
 app.use(rules);
 app.use(auth);
 app.use(router);
-app.use((req, res, next) => {
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.header(
-      "Access-Control-Allow-Headers",
-      "Origin, X-Requested-With, Content-Type, Accept"
-    );
-    next();
- });
+app.use(cors());
 app.listen(port, () => {
     console.log(`JSON Server is running in ${port}`);
 });
